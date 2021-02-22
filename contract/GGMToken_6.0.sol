@@ -1,11 +1,11 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'JoeToken' token contract
+// 'JoseToken' token contract
 //
 // Deployed to : 0xe5BB263319c54398884509Dced5855fCddA67fe2 // super private, don't tell anyone 🤫
-// Symbol      : JOE
-// Name        : JoeToken
+// Symbol      : JOSE
+// Name        : JoseToken
 // Total supply: 1
 // Decimals    : 1
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract JoeToken is ERC20Interface, Owned, SafeMath {
+contract JoseToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,8 +113,8 @@ contract JoeToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "JOE";
-        name = "JoeToken";
+        symbol = "JOSE";
+        name = "JoseToken";
         decimals = 0;
         _totalSupply = 1;
         balances[0xe5BB263319c54398884509Dced5855fCddA67fe2] = _totalSupply;
