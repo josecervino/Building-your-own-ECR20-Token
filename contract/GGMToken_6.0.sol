@@ -1,13 +1,13 @@
 pragma solidity 0.6.6;
 
 // ----------------------------------------------------------------------------
-// 'GGMToken' token contract
+// 'JoeToken' token contract
 //
-// Deployed to : 0xFEB02D9383C49A8373F88e82EbCecB553c1837bf
-// Symbol      : GGM
-// Name        : GGMToken
-// Total supply: 100000000
-// Decimals    : 18
+// Deployed to : 0xe5BB263319c54398884509Dced5855fCddA67fe2 // super private, don't tell anyone 🤫
+// Symbol      : JOE
+// Name        : JoeToken
+// Total supply: 1
+// Decimals    : 1
 //
 // Enjoy.
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract GGMToken is ERC20Interface, Owned, SafeMath {
+contract JoeToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -113,12 +113,12 @@ contract GGMToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor() public {
-        symbol = "CCM";
-        name = "CCMToken";
+        symbol = "JOE";
+        name = "JoeToken";
         decimals = 0;
-        _totalSupply = 100000000;
-        balances[0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58] = _totalSupply;
-        emit Transfer(address(0), 0x4B6408E5De3D348C0cd571E67Aa2dDBDe563AD58, _totalSupply);
+        _totalSupply = 1;
+        balances[0xe5BB263319c54398884509Dced5855fCddA67fe2] = _totalSupply;
+        emit Transfer(address(0), 0xe5BB263319c54398884509Dced5855fCddA67fe2, _totalSupply);
     }
 
 
